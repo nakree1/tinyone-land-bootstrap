@@ -1,0 +1,27 @@
+{
+  "name": "tinyone-land",
+  "version": "1.0.0",
+  "description": "Landing layout with Bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/nakree1/tinyone-land-bootstrap.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "scss",
+    "css",
+    "js",
+    "html"
+  ],
+  "author": "Max White <vexter3d@gmail.com> (https://github.com/nakree1)",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.1"
+  }
+}
