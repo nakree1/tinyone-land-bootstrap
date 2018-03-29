@@ -1,0 +1,140 @@
+$main-color: #fcdb00;
+$gray-color: #898989;
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	color: black;
+}
+
+ul, li {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	height: 100%;
+}
+
+header {
+	background-color: $main-color;
+}
+
+header nav {
+	font-size: 1.375rem;
+}
+
+.logo {
+	font-size: 2rem;
+}
+
+.menu__item {
+	display: flex;
+
+	a {
+		align-self: center;
+	}
+}
+
+.slider {
+	padding-top: 4.375rem;
+	@extend header;
+
+	.row {
+		padding-bottom: 7.5rem;
+	}
+}
+
+.slider__header {
+	margin-top: 4.625rem;
+}
+.slider__caption {
+	font-size: 1.25rem;
+}
+
+.slider__desc {
+	font-size: 1rem;
+	color: #555555;
+}
+
+.slider__icons .fa {
+	font-size: 2.625rem;
+	margin-right: 2rem;
+	cursor: pointer;
+
+	&:hover {
+		color: white;
+	}
+}
+
+main {
+	background-color: white;
+	padding-bottom: 10.625rem;
+
+	h2 {
+		padding-top: 7.5rem;
+	}
+
+	p {
+		font-size: 1.25rem;
+	}
+
+}
+
+.features__row {
+	margin-top: 5.625rem;
+
+	p {
+		color: $gray-color;
+	}
+
+	h3 {
+		font-size: 1.375rem;
+	}
+}
+
+.feature__icon  {
+	display: flex;
+	justify-content: space-around;
+
+	.fa {
+		font-size: 3.125rem;
+		margin: 0 auto;
+	}
+}
+
+.subscribe {
+	background-color: black;
+	color: white;
+
+	h2 {
+		color: $main-color;
+		padding-top: 7.5rem;
+	}
+
+	p {
+		font-size: 1.25rem;
+		color: $gray-color;
+	}
+
+	form {
+		display: flex;
+		height: 3.25rem;
+	}
+
+	input {
+		width: 78%;
+	}
+
+	button {
+		width: 17%;
+	}
+}
+
+.btn-yellow {
+	background-color: $main-color;
+
+	&:hover {
+		background-color: #e5c700;
+	}
+}
+
+
