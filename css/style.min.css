@@ -3,7 +3,11 @@ body {
   color: black;
 }
 
-ul, li {
+header, .slider {
+  background-color: #fcdb00;
+}
+
+header ul, .slider ul, header li, .slider li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12,10 +16,6 @@ ul, li {
   padding: 0;
   list-style: none;
   height: 100%;
-}
-
-header, .slider {
-  background-color: #fcdb00;
 }
 
 header nav, .slider nav {
@@ -141,10 +141,50 @@ main p {
   width: 17%;
 }
 
+.subscribe .fa {
+  margin-top: 8rem;
+  font-size: 2.625rem;
+  color: #fcdb00;
+}
+
+.subscribe .fa:hover {
+  color: white;
+  cursor: pointer;
+}
+
 .btn-yellow {
   background-color: #fcdb00;
 }
 
 .btn-yellow:hover {
   background-color: #e5c700;
+}
+
+footer {
+  padding: 8.375rem 0;
+  color: white;
+  background-color: black;
+}
+
+footer ul, footer li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: gray;
 }

@@ -6,16 +6,18 @@ body {
 	color: black;
 }
 
-ul, li {
-	display: flex;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	height: 100%;
-}
+
 
 header {
 	background-color: $main-color;
+
+	ul, li {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		height: 100%;
+	}
 }
 
 header nav {
@@ -127,6 +129,17 @@ main {
 	button {
 		width: 17%;
 	}
+
+	.fa {
+		margin-top: 8rem;
+		font-size: 2.625rem;
+		color: $main-color;
+
+		&:hover {
+			color: white;
+			cursor: pointer;
+		}
+	}
 }
 
 .btn-yellow {
@@ -137,4 +150,27 @@ main {
 	}
 }
 
+
+footer {
+	padding: 8.375rem 0;
+	color: white;
+	background-color: black;
+
+	ul, li {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		// height: 100%;
+	}
+
+	a {
+		color: white;
+
+		&:hover {
+			color: gray;
+		}
+	}
+}
 
