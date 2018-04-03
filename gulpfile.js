@@ -12,10 +12,7 @@ gulp.task('sass', function() {
 	return gulp.src('scss/style.scss')
 		.pipe(plumber())
 		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-		// .pipe(csso())
-		// .pipe(uncss({
-		// 	html: 'index.html'
-		// }))
+		.pipe(csso())
 		.pipe(autoprefix(['last 10 versions']))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('css/'))
@@ -26,10 +23,10 @@ gulp.task('build',function() {
 	return gulp.src('scss/bootstrap/bootstrap.scss')
 		.pipe(plumber())
 		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-		// .pipe(csso())
-		// .pipe(uncss({
-		// 	html: 'index.html'
-		// }))
+		.pipe(uncss({
+			html: ['index.html']
+		}))
+		.pipe(csso())
 		.pipe(autoprefix(['last 10 versions']))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('css/'))
